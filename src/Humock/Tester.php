@@ -6,7 +6,7 @@
  * @author odino
  */
 
-namespace odino\Humock;
+namespace Humock;
 
 use Behat\Mink\Mink;
 use Behat\Mink\PHPUnit\TestCase;
