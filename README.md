@@ -1,8 +1,10 @@
-# Humock - Human-friendly functional tester
+# Experiment in progress
 
-Humock (*human mock*) is a lightweight extension to Mink
-able to let you write PHPUnit functional tests just as
-your test would be a real, human, QA guy.
+# Humock - Human-friendly behat context
+
+Humock (*human mock*) is a lightweight Behat context
+able to let you use convenient methods inside Behat
+tests.
 
 ## Installation
 
@@ -16,8 +18,6 @@ The recommended installation is done via `composer`:
 
 Then you can start writing your tests extending the `Tester`:
 
-    class myTest extends Humock\Tester
+    class FeatureContext extends Humock\Context
     {
         ...
-
-## Basic usage
