@@ -1,0 +1,21 @@
+{
+    "name": "odino/humock",
+    "require": {
+        "behat/mink":  ">=1.4.0beta2,<1.4.x-dev",
+        "fabpot/goutte": "*",
+        "alexandresalome/php-selenium": "*",
+        "facebook/php-webdriver": "*",
+        "behat/sahi-client": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "odino\\Humock": "src/"
+        }
+    },
+    "repositories": {
+        "behat/mink-deps": {
+            "type": "composer",
+            "url":  "behat.org"
+        }
+    }
+}
