@@ -3,8 +3,32 @@
 # Humock - Human-friendly behat context
 
 Humock (*human mock*) is a lightweight Behat context
-able to let you use convenient methods inside Behat
-tests.
+able to let you use convenient methods to leverage
+the power of Mink, an abstraction layer for functional
+testing.
+
+With Humock you can combine Behat and Mink easily,
+so being able to do BDD during functional testing.
+
+An example test will look like:
+
+    class FeatureContext extends Humock\Context
+    {    
+        /**
+         * @Given /^I am on the homepage$/
+         */
+        public function iAmOnTheHomepage()
+        {
+            $this->visit("http://namshi.com");
+        }
+
+        /**
+         * @Given /^I click on "([^"]*)"$/
+         */
+        public function iClickOn($link)
+        {
+            $this->click($link);
+        }
 
 ## Installation
 
