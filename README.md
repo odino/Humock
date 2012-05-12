@@ -19,7 +19,7 @@ An example test will look like:
          */
         public function iAmOnTheHomepage()
         {
-            $this->visit("http://namshi.com");
+            $this->visit("http://website.com");
         }
 
         /**
