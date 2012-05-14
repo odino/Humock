@@ -27,10 +27,11 @@ class Context extends BehatContext
     
     public function click($identifier)
     {
-        $session = $this->tester->getSession();
+        $session    = $this->tester->getSession();
+        $selector   = new CssSelector;
         
         try {
-            $xpath = CssSelector::translateToXPath($identifier);
+            $xpath = $selector->translateToXPath($identifier);
             
             $session->getDriver()->click($xpath);
         }
