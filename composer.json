@@ -1,7 +1,7 @@
 {
     "name": "odino/humock",
     "require": {
-        "behat/behat":  "2.4.0beta5",
+        "behat/behat":  "2.4",
         "behat/mink":  ">=1.4.0beta2,<1.4.x-dev",
         "fabpot/goutte": "*",
         "alexandresalome/php-selenium": "*",
